@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://www.iconpacks.net/icons/1/free-heart-icon-431-thumb.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <title>บอลหล่อไหมมม?</title>
+</head>
+<body>
+    <!-- หน้าแรก -->
+    <div id="mainPage" class="container">
+        <span class="title">บอลหล่อไหมมม?</span>
+        <img id="mainImage" src="cool.jpg" alt="Do you?" />
+
+        <!-- ปุ่มกด -->
+        <div class="button-container">
+            <button
+                id="noButton"
+                class="button"
+                onmouseover="changeImage('hit.jpg')"
+                onmouseout="resetImage()"
+                onclick="handleNoClick(2)"
+            >
+                ไม่หล่อหรอ?
+            </button>
+            <button
+                id="loveButton"
+                class="button"
+                onmouseover="changeImage('doyou.png')"
+                onmouseout="resetImage()"
+                onclick="showPage('lovePage')"
+            >
+                หล่อมากก
+            </button>
+        </div>
+    </div>
+
+    <!-- หน้ากด หล่อมากก -->
+    <div id="lovePage" class="container hidden">
+        <h1>ว้าวววววววววว คุณสวยเเละจริงใจที่สุดเลย</h1>
+        <img src="cut.jpg" alt="Love You">
+    </div>
+
+    <!-- หน้ากด ไม่หล่อหรอ? -->
+    <div id="noPage" class="container hidden">
+        <h1>เศร้า ทำไมไม่หล่อล่ะ?</h1>
+        <img src="sad.jpg" alt="Sad Face">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
